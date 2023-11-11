@@ -1,0 +1,29 @@
+# README.md of August Guidry
+
+- I’m currently working on a mobile application.
+- I’m currently learning:
+    - Apple ecosystem
+        - iOS
+        - MacOS / OSX
+        - Swift language
+    - Ruby ecosystem
+        - Jekyll
+        - Ruby language
+        - Ruby on Rails
+    - Game development
+        - Blender
+        - Godot Engine
+- I’m looking to collaborate on anything interesting.
+- I’m looking for help with learning game development.
+- Ask me about:
+    - fitness
+    - photography
+    - travel
+- How to reach me: august@augustguidry.com
+- Pronouns: he/him
+- Fun fact: 日本語が分かります。
+
+## Contents
+
+- brewfile
+- dotfiles

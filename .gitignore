@@ -1,0 +1,26 @@
+# blacklist
+/*
+.config/*
+
+# whitelist
+!.config/
+!.config/abook/
+!.config/bash/
+!.config/doom/
+!.config/git/
+!.config/htop/
+!.config/librewolf/
+!.config/mozilla/
+!.config/neofetch/
+!.config/newsboat/
+!.config/npm/
+!.config/nvim/
+!.config/vim/
+!.config/yt-dlp/
+!.gitignore
+!.profile
+!.zshrc
+!README.md
+!augustguidry.code-workspace
+!brewfile
+.DS_Store

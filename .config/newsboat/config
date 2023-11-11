@@ -1,0 +1,34 @@
+# Appendix A: Newsboat Configuration Commands
+auto-reload yes
+bookmark-cmd "buku"
+browser "open -g -a 'librewolf' %u"
+confirm-exit yes
+datetime-format %Y-%m-%d
+display-article-progress yes
+external-url-viewer "urlview"
+feedlist-format "%i %t %d | %u #%T"
+openbrowser-and-mark-jumps-to-next-unread yes
+text-width 60
+
+# Appendix B: Newsboat Operations
+# binds
+bind-key G end
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key Q hard-quit
+bind-key f goto-url
+bind-key g home
+bind-key h quit
+bind-key j down
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key k up
+bind-key l open
+
+# macros
+macro d set browser "yt-dlp %u"; open-in-browser; set browser "librewolf %u"
+macro v set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-browser ; set browser "librewolf %u"
+
+# Appendix C: Podboat Configuration Commands
+
+# Appendix D: Podboat Operations
