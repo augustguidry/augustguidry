@@ -22,8 +22,3 @@
 - How to reach me: august@augustguidry.com
 - Pronouns: he/him
 - Fun fact: 日本語が分かります。
-
-## Contents
-
-- brewfile
-- dotfiles
