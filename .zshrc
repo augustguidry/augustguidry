@@ -71,10 +71,24 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  asdf
 	copyfile
 	git 
+	github
+	npm
+	pass
+	pip
+	pod
+	rails
+	rake
+	ruby
+	thefuck
+	vi-mode
+	vscode
 	web-search
+	xcode
 	z
+	zsh-interactive-cd
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -100,8 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Zsh .compdumpfiles
@@ -112,6 +124,15 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # thefuck, fuck
 eval $(thefuck --alias)
+
+# machine dependency
+if [[ "$(uname -m)" == "x86_64" ]]; then
+    # Intel Mac configurations
+    export PATH=/usr/local/bin:$PATH
+elif [[ "$(uname -m)" == "arm64" ]]; then
+    # ARM Mac configurations
+    export PATH=/opt/homebrew/bin:$PATH
+fi
 
 # XDG standard directory declarations
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -126,6 +147,8 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_VIDEOS_DIR="$HOME/Movies"
 
 # exports
+export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}/asdf/asdfrc"
+export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
 export EDITOR=nvim
 export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
 export FISH_HISTORY_FILE="XDG_STATE_HOME"/fish/history
@@ -138,7 +161,6 @@ export LESSHISTFILE="$XDG_CACHE_HOME/less/history"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 export NVM_DIR="$XDG_DATA_HOME"/nvm
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
-export PATH="/opt/homebrew/bin:$PATH"
 export TLDR_CACHE_DIR="$XDG_CACHE_HOME/tldrc"
 export VISUAL=nvim
 export ZDOTDIR="$HOME"/.config/zsh
@@ -154,8 +176,4 @@ alias abook=abook --config $XDG_CONFIG_HOME/abook/abookrc --datafile "$XDG_DATA_
 alias ls=eza
 alias monerod=monerod --data-dir "$XDG_DATA_HOME"/bitmonero
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-
-# source
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'

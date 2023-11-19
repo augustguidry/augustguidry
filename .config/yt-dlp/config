@@ -1,2 +1,2 @@
-# Save all videos under YouTube directory in your home directory
--o ~/YouTube/%(title)s.%(ext)s
+# Save all videos under XDG_VIDEOS_DIR
+-o $XDG_VIDEOS_DIR/%(title)s.%(ext)s

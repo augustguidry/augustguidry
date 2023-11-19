@@ -20,5 +20,5 @@
     - photography
     - travel
 - How to reach me: august@augustguidry.com
-- Pronouns: he/him
+- Pronouns: he/him/his
 - Fun fact: 日本語が分かります。

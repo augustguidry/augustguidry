@@ -1,31 +1,32 @@
 # Brewfile of August Guidry
-# 'brew tap'
-# tap 'homebrew/cask'
-# tap 'homebrew/cask-drivers'
-# tap 'homebrew/cask-fonts'
-# tap 'homebrew/cask-versions'
-# tap 'homebrew/core'
-# tap 'homebrew/boneyard'
-# tap 'homebrew/dev-tools'
-# tap 'homebrew/bundle'
-# tap 'homebrew/services'
+# brew tap
+tap 'homebrew/boneyard'
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
+tap 'homebrew/core'
+tap 'homebrew/dev-tools'
+tap 'homebrew/services'
 
-# 'brew install'
+# brew install
+brew 'asdf'
 brew 'bash'
-brew 'chruby'
+brew 'calc'
 brew 'cmus'
 brew 'composer'
 brew 'davmail'
 brew 'direnv'
 brew 'docker'
 brew 'docker-compose'
-brew 'dotnet'
 brew 'emacs'
 brew 'eza'
 brew 'fd'
 brew 'ffmpeg'
 brew 'fish'
 brew 'fisher'
+brew 'font-monaspace'
 brew 'fzf'
 brew 'git'
 brew 'gpg'
@@ -42,13 +43,9 @@ brew 'neovim'
 brew 'newsboat'
 brew 'node'
 brew 'notmuch'
-brew 'nvm'
 brew 'pass'
 brew 'peco'
-brew 'powerline-go'
-brew 'python'
 brew 'ripgrep'
-brew 'ruby'
 brew 'shellcheck'
 brew 'speedtest-cli'
 brew 'sqlite'
@@ -61,6 +58,7 @@ brew 'urlview'
 brew 'vim'
 brew 'w3m'
 brew 'webp'
+brew 'webpack'
 brew 'wget'
 brew 'whalebrew'
 brew 'xdg-ninja'
@@ -70,14 +68,14 @@ brew 'zoxide'
 brew 'zsh'
 brew 'zsh-autosuggestions'
 
-# Brew cask applications
-# 'brew install --cask'
+# brew install --cask
 cask 'adobe-creative-cloud'
 cask 'anki'
 cask 'appcleaner'
 cask 'blender'
 cask 'calibre'
 cask 'emacs'
+cask 'font-hack-nerd-font'
 cask 'gemini'
 cask 'github'
 cask 'godot'
@@ -111,7 +109,7 @@ cask 'visual-studio-code'
 cask 'wacom-tablet'
 cask 'wasabi-wallet'
 
-# 'mas install'
+# mas install
 mas '1Blocker', id: 1365531024
 mas 'Developer', id: 640199958
 mas 'FastVPN', id: 1419729466
@@ -123,8 +121,8 @@ mas 'Xcode', id: 1419729466
 mas 'iA Writer', id: 775737590
 mas 'iMovie', id: 408981434
 
-# 'whalebrew install'
+# whalebrew install
 whalebrew 'whalebrew/wget'
 
-# 'vscode --install-extension'
+# vscode --install-extension
 vscode "GitHub.codespaces"
