@@ -1,5 +1,15 @@
 # custom fields
 field birthday = Birthday, date
+field company = Company, string
+field prefix = Prefix, string
+field suffix = Suffix, string
+field tags = Tags, list
+
+# View
+view CONTACT = prefix, name, suffix, email, company, tags
+view ADDRESS = address, address2, city, state, zip, country
+view PHONE = mobile, phone, workphone, fax
+view OTHER = url, birthday, notes
 
 # Preserve any unknown field while loading an abook database
 set preserve_fields=all
@@ -8,7 +18,18 @@ set preserve_fields=all
 set autosave=true
 
 # Define how fields should be displayed in tabs
-view CONTACT = name, email
-view ADDRESS = address_lines, city, state, zip, country
-view PHONE = phone, workphone, pager, mobile, fax
-view OTHER = url, birthday
+set show_all_emails=true
+
+# show cursor in main display 
+set show_cursor=true
+
+# Whether to avoid adding addresses already in data
+set add_email_prevent_duplicates = false
+
+set sort_field = tags
+
+# Command used to start mutt
+set mutt_command=neomutt
+
+# address style [eu|us|uk]
+set address_style = us

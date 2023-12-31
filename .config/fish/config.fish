@@ -43,11 +43,9 @@ end
 if test (uname -m) = x86_64
     # Intel Mac configurations
     set -x PATH /usr/local/bin $PATH
-    source /usr/local/opt/asdf/libexec/asdf.fish
 else if test (uname -m) = arm64
     # ARM Mac configurations
     set -x PATH /opt/homebrew/bin $PATH
-    source /opt/homebrew/bin/asdf/libexec/asdf.fish
 end
 
 # XDG standard directory declarations
@@ -93,10 +91,85 @@ end
 
 # alias
 alias abook='abook --config $XDG_CONFIG_HOME/abook/abookrc --datafile "$XDG_DATA_HOME/abook/addressbook"'
+alias github="web-search github"
+alias google="web-search google"
 alias ls='eza'
 alias monerod='monerod --data-dir "$XDG_DATA_HOME/bitmonero"'
 alias ohmyzsh='mate ~/.oh-my-zsh'
+alias stackoverflow="web-search stackoverflow"
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 
 # fuck
 thefuck --alias | source
+
+# asdf
+echo -e "\nsource "(brew --prefix asdf)"/libexec/asdf.fish" >>~/.config/fish/config.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
