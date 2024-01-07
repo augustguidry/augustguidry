@@ -46,6 +46,8 @@ brew 'notmuch'
 brew 'pass'
 brew 'pass-otp'
 brew 'peco'
+brew 'proselint'
+brew 'remind'
 brew 'ripgrep'
 brew 'shellcheck'
 brew 'speedtest-cli'
@@ -71,6 +73,7 @@ brew 'zsh-autosuggestions'
 
 # brew install --cask
 cask 'adobe-creative-cloud'
+cask 'amethyst'
 cask 'anki'
 cask 'appcleaner'
 cask 'blender'
@@ -87,7 +90,6 @@ cask 'keyclu'
 cask 'libreoffice'
 cask 'logitech-options'
 cask 'microsoft-excel'
-cask 'microsoft-onenote'
 cask 'microsoft-outlook'
 cask 'microsoft-powerpoint'
 cask 'microsoft-teams'
@@ -113,12 +115,17 @@ cask 'wasabi-wallet'
 
 # mas install
 mas '1Blocker', id: 1365531024
+mas 'Dark Reader for Safari', id:1438243180
 mas 'Developer', id: 640199958
 mas 'FastVPN', id: 1419729466
 mas 'GarageBand', id: 682658836
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
+mas 'Save to Pocket', id: 1477385213
+mas 'Tampermonkey', id: 1482490089
+mas 'Userscripts-Mac-App', id: 1463298887
+mas 'Vimari', id: 1480933944
 mas 'Xcode', id: 1419729466
 mas 'iA Writer', id: 775737590
 mas 'iMovie', id: 408981434

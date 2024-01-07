@@ -61,6 +61,9 @@ set -x XDG_STATE_HOME "$HOME/.local/state"
 set -x XDG_VIDEOS_DIR "$HOME/Movies"
 
 # exports
+set -gx BUNDLE_USER_CACHE "$XDG_CACHE_HOME"/bundle
+set -gx BUNDLE_USER_CONFIG "$XDG_CONFIG_HOME"/bundle
+set -gx BUNDLE_USER_PLUGIN "$XDG_DATA_HOME"/bundle
 set -x ASDF_CONFIG_FILE "$XDG_CONFIG_HOME/asdf/asdfrc"
 set -x ASDF_DATA_DIR "$XDG_DATA_HOME/asdf"
 set -x EDITOR nvim
@@ -103,73 +106,4 @@ alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 thefuck --alias | source
 
 # asdf
-echo -e "\nsource "(brew --prefix asdf)"/libexec/asdf.fish" >>~/.config/fish/config.fish
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
