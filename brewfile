@@ -56,6 +56,7 @@ brew 'syncthing'
 brew 'thefuck'
 brew 'tldr'
 brew 'tmux'
+brew 'tpm'
 brew 'tree'
 brew 'urlview'
 brew 'vim'
@@ -76,14 +77,17 @@ cask 'adobe-creative-cloud'
 cask 'amethyst'
 cask 'anki'
 cask 'appcleaner'
+cask 'darktable'
 cask 'blender'
 cask 'calibre'
 cask 'discord'
+cask 'electrum'
 cask 'emacs'
 cask 'font-hack-nerd-font'
 cask 'gemini'
 cask 'github'
 cask 'godot'
+cask 'gpg-suite'
 cask 'iina'
 cask 'iterm2'
 cask 'keyclu'
@@ -109,9 +113,7 @@ cask 'steam'
 cask 'thunderbird'
 cask 'tor-browser'
 cask 'transmission'
-cask 'visual-studio-code'
 cask 'wacom-tablet'
-cask 'wasabi-wallet'
 
 # mas install
 mas '1Blocker', id: 1365531024
@@ -131,7 +133,7 @@ mas 'iA Writer', id: 775737590
 mas 'iMovie', id: 408981434
 
 # whalebrew install
-whalebrew 'whalebrew/wget'
+# example: whalebrew 'whalebrew/wget'
 
 # vscode --install-extension
-vscode "GitHub.codespaces"
+# example: vscode "GitHub.codespaces"
