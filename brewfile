@@ -73,7 +73,6 @@ brew 'zsh'
 brew 'zsh-autosuggestions'
 
 # brew install --cask
-cask 'adobe-creative-cloud'
 cask 'amethyst'
 cask 'anki'
 cask 'appcleaner'
