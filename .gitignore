@@ -10,13 +10,12 @@
 !.config/bash/
 .config/darktable/*
 #!.config/darktable/darktablerc
-!.config/darktable/shortcutsrc
-!.config/darktable/user.css
+#!.config/darktable/shortcutsrc
+#!.config/darktable/user.css
 !.config/fish/
 !.config/git/
 !.config/htop/
-!.config/librewolf/
-!.config/mozilla/
+!.config/mpv/
 !.config/neofetch/
 !.config/newsboat/
 !.config/npm/
@@ -29,5 +28,4 @@
 !.profile
 !.zshrc
 !README.md
-!augustguidry.code-workspace
 !brewfile
