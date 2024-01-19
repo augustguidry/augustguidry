@@ -1,2 +1,2 @@
 # Save all videos under XDG_VIDEOS_DIR
--o $XDG_VIDEOS_DIR/YouTube/%(title)s.%(ext)s
+-o $XDG_VIDEOS_DIR/%(title)s.%(ext)s

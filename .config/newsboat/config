@@ -1,4 +1,4 @@
-# Appendix A: Newsboat Configuration Commands
+# configuration commands
 auto-reload yes
 bookmark-cmd "buku"
 browser "open -g -a 'librewolf' %u"
@@ -10,7 +10,6 @@ feedlist-format "%i %t %d | %u #%T"
 openbrowser-and-mark-jumps-to-next-unread yes
 text-width 60
 
-# Appendix B: Newsboat Operations
 # binds
 bind-key G end
 bind-key J next-feed articlelist
@@ -25,24 +24,15 @@ bind-key k prev articlelist
 bind-key k up
 bind-key l open
 
-# macros
+# macro setup
+browser linkhandler
+macro , open-in-browser
 
-# Appendix C: Podboat Configuration Commands
+# launch video player
+macro v set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler
 
-# Appendix D: Podboat Operations
-#
-#!/bin/sh
-#
-# newsboat-solarized – Ethan Schoonover's precision colours[0] for newsboat
-#
-# Written in 2020 by Repentinus <newsboat-solarized at repentinus dot eu>
-#
-# To the extent possible under law, the author(s) have dedicated all copyright
-# and related and neighboring rights to this software to the public domain
-# worldwide. This software is distributed without any warranty.
-#
-# You should have received a copy of the CC0 Public Domain Dedication along with
-# this software. If not, see [1].
-#
-# [0] https://ethanschoonover.com/solarized/
-# [1] http://creativecommons.org/publicdomain/zero/1.0/
+# download video
+macro d set browser "yt-dlp"; open-in-browser ; set browser linkhandler
+
+# download audio only
+macro a set browser "yt-dlp --embed-medatada -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
