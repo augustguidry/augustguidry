@@ -1,2 +1,5 @@
 # Save all videos under XDG_VIDEOS_DIR
 -o $XDG_VIDEOS_DIR/%(title)s.%(ext)s
+
+# Format MP4
+-f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best"

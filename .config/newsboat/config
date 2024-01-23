@@ -1,7 +1,6 @@
 # configuration commands
 auto-reload yes
-bookmark-cmd "buku"
-browser "open -g -a 'librewolf' %u"
+browser "open -a safari '%u"
 confirm-exit yes
 datetime-format %Y-%m-%d
 display-article-progress yes

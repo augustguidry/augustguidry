@@ -1,6 +1,7 @@
 # blacklist
 /*
 .config/*
+Mail/*
 .DS_Store
 
 # whitelist
@@ -27,5 +28,7 @@
 !.gitignore
 !.profile
 !.zshrc
+!Mail/
+!Mail/.gitkeep
 !README.md
 !brewfile
