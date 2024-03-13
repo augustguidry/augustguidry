@@ -1,10 +1,10 @@
 # README.md of August Guidry
 
-- I’m currently working on a mobile application.
+- I’m currently working on rewriting my website for the fifth time in two years.
 - I’m currently learning:
-    - Apple development (iOS, MacOS, Swift, etc.)
+    - 3D computer graphics
+    - Apple development ecosystem
     - Ruby on Rails
-    - Blender
 - I’m looking to collaborate on anything interesting.
 - I’m looking for help with learning game engine development.
 - Ask me about:
